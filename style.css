@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* :root{
+    --bgcolor: #1f242d;
+    --secondbgcolor: #323946;
+    --textcolor: #fff;
+    --maincolor: #0ef;
+} */
+.container {
+    background: linear-gradient(to left, #13547a, #80d0c7);
+    color: #0ef;
+    min-height: 100vh;
+    width: auto;
+    box-shadow: 0px 2px 10px #e699ff inset;
+    width: 100vw;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    gap: 10rem;
+    color: rgb(15, 95, 90);
+}
+
+.navbar .left-navbar h1 {
+    font-size: 4rem;
+    position: relative;
+    left: 2%;
+}
+
+.navbar .left-navbar {
+    position: relative;
+    left: 2%;
+}
+
+.navbar .right-navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .right-navbar ul li a {
+    text-decoration: none;
+    color: rgb(40, 92, 88);
+    font-size: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar .right-navbar ul i {
+    font-size: 2rem;
+}
+
+.navbar .right-navbar ul li a,
+.navbar .right-navbar ul :hover {
+    color: rgb(40, 92, 88);
+    transition: all 0.2s ease-in-out;
+    border-bottom: #0ef;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.container-2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 500px);
+    place-items: center;
+    margin-top: 20vh;
+    margin-left: 10vw;
+}
+
+.container-2 .text-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi-text {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: rgb(40, 92, 88);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.sahilhaque {
+    margin-left: 1rem;
+    font-family: cursive;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    border-right: .15em solid orange;
+
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end) alternate infinite,
+        blink-caret .75s step-end infinite;
+    animation-delay: 0.2s;
+    color: rgb(99, 128, 126);
+}
+
+.container-2 .text-icons .other-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+    padding: 2rem;
+    color: rgb(40, 92, 88);
+}
+
+.text-icons .icon {
+    display: flex;
+    gap: 3rem;
+    font-size: 2.9rem;
+    background: #c569e49d;
+    padding: 1.4rem;
+    border: none;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1rem 1rem 4rem #e699ff;
+    margin-top: 4rem;
+    transition: all 0.2s ease-in-out;
+    animation: iconsanim 10s ease infinite alternate;
+}
+
+@keyframes iconsanim {
+    0% {
+        transform: translateY(-30%);
+        box-shadow: 3px 3px 10px #e699ff;
+    }
+
+    100% {
+        transform: translateY(30%);
+        box-shadow: 10px 10px 50px #e699ff;
+    }
+}
+
+.text-icons .icon:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.text-icons .icon i {
+    transition: all 0.2s ease-in-out;
+}
+
+.text-icons .icon i:hover {
+    transform: scale(1.03);
+    color: #13547a;
+}
+
+.text-icons .icon i {
+    color: rgb(99, 128, 126);
+}
+
+.text-icons {
+    display: flex;
+}
+
+.pro-img img {
+    max-height: 50vh;
+    box-shadow: 0 25px 40px #e699ff;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    animation: profilanim 5s ease infinite alternate;
+}
+
+@keyframes profilanim {
+    0% {
+        transform: translateY(10%);
+        box-shadow: 3px 3px 10px #0ef;
+    }
+
+    100% {
+        transform: translateY(-10%);
+        box-shadow: 10px 10px 70px #0ef;
+    }
+}
+
+.pro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+}
+
+/* .container-3 {
+    height: 100vh;
+    width: auto;
+    background: wheat;
+} */
+
+.container-2 {
+    display: grid;
+    grid-gap: 0rem 15rem;
+}
+
+.pro-img img:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.that-text {
+    display: inline-block;
+}
+
+.movingtext {
+    white-space: nowrap;
+    overflow: auto;
+    width: 100vw;
+}
+
+.mtext-img {
+    width: auto;
+    position: relative;
+    right: 1vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.movingtext {
+    position: relative;
+    top: -10vh;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: cursive;
+    color: rgba(40, 92, 88, 0.274);
+
+}
+
+.that-text {
+    animation: FRA 20s linear infinite;
+}
+
+
+@keyframes FRA {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: ; */
+    }
+    .menu{
+        font-size: 4rem;
+        transition: all 0.2s ease;
+    }
+    .menu:hover{
+        color: #e699ff;
+        transition: all 0.2s ease;
+    }
+    html{
+        font-size: 40%;
+    }
+    
+    .right-navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-navbar{
+        display: none;
+    }
+    .container-2{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        left: -9vw;
+        position: relative;
+
+    }
+    #home{
+        display: flex;
+        
+        align-items: center;
+    }
+    .pro-img img{
+        height: 50vh;
+        margin: 4rem;
+    }
+    .pro-img{
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+    .icon{
+        margin: 10rem;
+
+    }
+    .xyz{
+        position: relative;
+        top: 8vh;
+    }
+    .xyz{
+        margin-top: -40px;
+    }
+  } 
+  @media (min-width:768px) {
+    .menu{
+        display: none;
+    }
+  }
+  @media (max-width:320px) {
+    .sahilhaque h1{
+        font-size: 3rem;
+    }
+    
+  }
+button{
+    background: transparent;
+    border:none;
+}

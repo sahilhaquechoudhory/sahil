@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'single day',sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bgimage.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
+}
+.title{
+    margin-top: 10px;
+
+    font-size: 2.6rem;
+    text-align: center;
+}
+.col{
+    width: 1000px;
+    /* height: 100px; */
+    /* border: 1px solid red; */
+    margin: 200px auto;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+}
+.col div{
+    width: 250px;
+    text-align: center;
+
+}
+input{
+    height: 60px;
+    width: 50%;
+    background-color: rgba(255,255, 255,0.6);
+    border-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 10px 10px #000000;
+}
